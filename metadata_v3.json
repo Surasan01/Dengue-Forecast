@@ -1,0 +1,65 @@
+{
+  "created_utc": "2025-11-21T16:42:03.924798Z",
+  "cut_date_valid": "2023-12-04 00:00:00",
+  "features": [
+    "province_code",
+    "cluster_id",
+    "year",
+    "month",
+    "weekofyear",
+    "sin_woy",
+    "cos_woy",
+    "age_mean",
+    "ipd_rate",
+    "cases_ema4",
+    "cases_ema8",
+    "cases_roll4_mean",
+    "cases_roll6_mean",
+    "cases_volatility8",
+    "cases_zscore_cluster",
+    "cases_lag2",
+    "cases_lag1",
+    "precipitation_sum_lag4",
+    "temperature_2m_mean_lag8",
+    "lon",
+    "district_num",
+    "cluster_cases_lag4",
+    "cases_roll16_mean",
+    "temperature_2m_mean_lag12",
+    "cluster_cases_lag1",
+    "cases_roll8_mean",
+    "precipitation_sum_lag3",
+    "windspeed_10m_max_lag12",
+    "lat",
+    "temperature_2m_max",
+    "temperature_2m_min",
+    "relative_humidity_2m_mean_lag8",
+    "vpd_kpa_lag4",
+    "cluster_cases_mean",
+    "cases_lag4",
+    "vpd_kpa_lag3",
+    "precipitation_sum_lag2"
+  ],
+  "static_features": [
+    "province_code",
+    "cluster_id"
+  ],
+  "extra_lags": [
+    16,
+    20,
+    24
+  ],
+  "extra_rolls": [
+    6,
+    10,
+    16
+  ],
+  "diff_windows": [
+    1,
+    4
+  ],
+  "freq": "W-MON",
+  "model_name": "lgb_poisson",
+  "rng_seed": 2025,
+  "notes": "v3 feature selection + leakage-safe split"
+}
